@@ -109,6 +109,10 @@ button {
   margin-top: -5rem;
 }
 
+.heroSubHeading {
+    text-align: center;
+}
+
 .heroMainCta {
   display: flex;
   align-items: center;
@@ -117,12 +121,13 @@ button {
 
 .illustrationBox {
   /* layout */
-  display: inline-flex;
-  padding: 2.5rem 3.75rem;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+  padding: 2.5rem 3.75rem;
+  width: 40em;
 
   /* border */
   border-radius: 24px;
@@ -150,7 +155,9 @@ button {
 
 /* Styling the backgrounds */
 .frame1heroSection {
-  background-image: url(/assets/backgrounds/heroSection.svg);
+    background-image: url(/assets/backgrounds/heroSection.svg);
+    width: 80rem;
+    height: 45rem;
 }
 
 .frame2Top {
