@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the webpage -->
+    <title>Figma To Code - Scissors</title>
+
+    <!-- Script for Frame 4 (FAQs Accordion) -->
+    <script defer>
+      // Get all accordion buttons
+      const accordions = document.getElementsByClassName("accordion");
+
+      // Add click event listener to each accordion button
+      for (let i = 0; i < accordions.length; i++) {
+        accordions[i].addEventListener("click", function () {
+          // Toggle active class to change the style of the button
+          this.classList.toggle("active");
+
+          // Toggle the visibility of the panel
+          const panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <!-- Link for "gilroy" font family -->
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+
+    <!-- Links to reset default css (using normalize.css) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link to the document's css file (index.js) -->
+    <link href="/assets/css/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- The web page's Frame 1: Hero section -->
+    <div class="frame1heroSection">
+      <!-- Hero section header, containing site logo, navigation links and CTA -->
+      <div class="header">
+        <!-- Site logo -->
+        <div class="navLogo">
+          <a href="#">
+            <img src="/assets/icons/logo.svg" alt="The Scissor Brand Logo" />
+          </a>
+        </div>
+
+        <!-- Site's navigation links -->
+        <nav class="navLinks">
+          <a><li id="myUrls">My URLS</li></a>
+          <a><li>Features</li></a>
+          <a><li>Pricing</li></a>
+          <a><li>Analytics</li></a>
+          <a><li>FAQs</li></a>
+        </nav>
+
+        <!-- Site header's CTA (call to action) -->
+        <div class="ctaLinks">
+          <!-- Site's CTA link -->
+          <a href="#" id="ctaLogin">Log in</a>
+
+          <!-- Site's CTA button -->
+          <button class="ctaButton">Try for free</button>
+        </div>
+      </div>
+
+      <!-- Hero main section -->
+      <main class="heroSectionMain">
+        <!-- Hero main section's heading -->
+        <h1 class="heroMainHeading">
+          Optimize Your Online Experience with Our Advanced
+          <span class="urlShortening">URL Shortening</span>
+          Solution
+        </h1>
+
+        <!-- The blue marker line -->
+        <div class="blueMarkerLine">
+          <img
+            src="/assets/icons/vector3.svg"
+            alt="A blue marker line"
+            class="blueMarkerLine"
+          />
+        </div>
+
+        <!-- Hero main subheading -->
+        <div class="heroMainSubHeading">
+          <p class="mainSubHeadingText">
+            Personalize your shortened URLs to align with your brand identity.
+            Utilize custom slugs, branded links, and domain customization
+            options to reinforce your brand presence and enhance user
+            engagement.
+          </p>
+        </div>
+
+        <!-- Hero main CTA (call to action) -->
+        <div class="heroMainCta">
+          <!-- Hero main CTA button -->
+          <a href="#" class="heroMainCtaButton">
+            <button>Sign up</button>
+          </a>
+          <!-- Hero main CTA link -->
+          <a href="#" class="mainSectionCtaLink">Learn more</a>
+        </div>
+
+        <!-- Hero main illustration box for url shortening -->
+        <div class="illustrationBox">
+          <!-- Hero main illustration link icons -->
+          <div class="linksIllustration">
+            <img
+              src="assets/icons/link2.svg"
+              alt="A link icon"
+              class="linkIcon"
+            />
+            <img
+              src="assets/icons/link2.svg"
+              alt="A link icon"
+              class="linkIcon"
+            />
+            <img
+              src="assets/icons/link2.svg"
+              alt="A link icon"
+              class="linkIcon"
+            />
+
+            <!-- The illustration box's blue arrow -->
+            <img
+              src="/assets/icons/line7.svg"
+              alt="A blue arrow"
+              id="blueArrowLine"
+            />
+
+            <!-- One more link icon for the illustration box -->
+            <img
+              src="assets/icons/link2.svg"
+              alt="A link icon"
+              class="linkIcon"
+            />
+          </div>
+
+          <!-- The illustration box's text -->
+          <div class="illustrationBoxText">
+            <p class="illustrationBoxP">
+              Seamlessly transform your long URLs into concise and shareable
+              links with just few clicks.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- The web page's second frame: Frame 2 -->
+    <div class="frame2">
+      <!-- Frame 2's Top Heading -->
+      <div class="frame2Top">
+        <div class="frame2TopHeader">
+          <h1>
+            One Stop. Four
+            <span class="possibilities">Possibilities</span>
+            .
+          </h1>
+        </div>
+
+        <!-- Frame 2's Top Metrics -->
+        <div class="frame2Top frame2TopMetrics">
+          <!-- Top Metrics text 1 -->
+          <div class="topMetrics">
+            <h3 class="topMetricsText">3M</h3>
+            <p class="topMetricsNumber">Active Users</p>
+          </div>
+
+          <!-- Top Metrics text 2 -->
+          <div class="topMetrics">
+            <h3 class="topMetricsText">60M</h3>
+            <p class="topMetricsNumber">Links & QR codes created</p>
+          </div>
+
+          <!-- Top Metrics text 3 -->
+          <div class="topMetrics">
+            <h3 class="topMetricsText">1B</h3>
+            <p class="topMetricsNumber">Clicked & Scanned connections</p>
+          </div>
+
+          <!-- Top Metrics text 4 -->
+          <div class="topMetrics">
+            <h3 class="topMetricsText">300K</h3>
+            <p class="topMetricsNumber">App integrations</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frame 2's Bottom Content-->
+      <div class="frame2Bottom">
+        <!-- Section One's Bottom left header -->
+        <div class="bottomLeft">
+          <div class="bottomLeftHeader">
+            <img
+              src="/assets/icons/line.svg"
+              alt="A line icon"
+              class="gradientLineIcon"
+            />
+            <h1>
+              Why choose
+              <span class="scissors">Scissors</span>
+            </h1>
+          </div>
+
+          <!-- Frame 2's Bottom left text -->
+          <div class="bottomLeftText">
+            <p>
+              Scissors is the hub of everything that has to do with your link
+              management. We shorten your URLs, allow you creating custom ones
+              for your personal, business, event usage. Our swift QR code
+              creation, management and usage tracking with advance analytics for
+              all of these is second to none.
+            </p>
+          </div>
+        </div>
+
+        <!-- Frame 2's Bottom right -->
+        <div class="frame2BottomRight">
+          <!-- Bottom right text 1 -->
+          <div class="bottomRightText">
+            <img
+              src="/assets/icons/link2Colored.svg"
+              alt="A colored link icon"
+            />
+            <h3>URL Shortening</h3>
+            <p>
+              Scissor allows you to shorten URLs of your business, events.
+              Shorten your URL at scale, URL redirects.
+            </p>
+          </div>
+
+          <!-- Bottom right text 2 -->
+          <div class="bottomRightText">
+            <img
+              src="/assets/icons/ellipseGrid.svg"
+              alt="An ellipse grid icon"
+            />
+            <h3>QR Codes</h3>
+            <p>
+              Generate QR codes to your business, events. Bring your audience
+              and customers to your doorstep with this scan and go solution.
+            </p>
+          </div>
+
+          <!-- Bottom right text 3 -->
+          <div class="bottomRightText">
+            <img src="/assets/icons/edit.svg" alt="An edit icon" />
+            <h3>Custom URLs</h3>
+            <p>
+              With Scissor, you can create custom URLs, with the length you
+              want! A solution for socials and businesses.
+            </p>
+          </div>
+
+          <!-- Bottom right text 4 -->
+          <div class="bottomRightText">
+            <img src="/assets/icons/activity.svg" alt="An analytics icon" />
+            <h3>Data Analytics</h3>
+            <p>
+              Receive data on the usage of either your shortened URL, custom
+              URLs or generated QR codes. Embedded to monitor progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The web page's third frame: Frame 3 -->
+    <div class="frame3">
+      <!-- Frame 3 Heading -->
+      <div class="frame3Heading">
+        <img
+          src="/assets/icons/line.svg"
+          alt="A line icon"
+          class="gradientLineIcon"
+        />
+        <h3>
+          A
+          <span class="pricePerfect">price perfect</span>
+          for your needs
+        </h3>
+      </div>
+
+      <!--Frame 2 subheading  -->
+      <div class="frame3Subheading">
+        <p>
+          From catering for your personal, business, event, socials needs, you
+          can be rest assured we have you in mind in our pricing.
+        </p>
+      </div>
+
+      <!-- Frame 3 price catalogue -->
+      <div class="priceCatalogue">
+        <!-- Basic plan -->
+        <div class="priceCatalogue1">
+          <a href="#" class="basicClickable">
+            <div class="basicContainer"></div>
+            <p class="basic">Basic</p>
+            <p class="basicFee">Free</p>
+            <p class="freePlanText">Free plan for all users</p>
+
+            <ul class="features">
+              <li>Unlimited URL Shortening</li>
+              <li>Basic Link Analytics</li>
+              <li>Customizable Short Links</li>
+              <li>Standard Support</li>
+              <li>Ad-supported</li>
+            </ul>
+          </a>
+        </div>
+
+        <!-- Professional plan -->
+        <div class="priceCatalogue2">
+          <a href="#" class="professionalClickable">
+            <div class="professionalContainer"></div>
+            <p class="professional">Professional</p>
+            <p class="professionalFee">$15/month</p>
+            <p class="professionalPlanText">Ideal for business creators</p>
+
+            <ul class="featuresMiddle">
+              <li>Unlimited URL Shortening</li>
+              <li>Basic Link Analytics</li>
+              <li>Customizable Short Links</li>
+              <li>Standard Support</li>
+              <li>Ad-supported</li>
+            </ul>
+          </a>
+        </div>
+
+        <!-- Teams plan -->
+        <div class="priceCatalogue3">
+          <a href="#" class="teamsClickable">
+            <div class="teamsPlanContainer"></div>
+            <p class="teams">Teams</p>
+            <p class="teamsFee">$25/month</p>
+            <p class="freePlanText">Share with up to 10 users</p>
+
+            <ul class="features">
+              <li>Unlimited URL Shortening</li>
+              <li>Basic Link Analytics</li>
+              <li>Customizable Short Links</li>
+              <li>Standard Support</li>
+              <li>Ad-supported</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+
+      <div class="frame3Buttons">
+        <button class="frame3button1">Get Custom Pricing</button>
+        <button class="frame3button2">Select Pricing</button>
+      </div>
+    </div>
+
+    <!-- The web page's fourth frame: Frame 4 (the TrimURL form)-->
+    <form method="post" class="UrlInputForm">
+      <!-- The form's url input box -->
+      <div class="urlInput">
+        <label name="url" for="url" type="url"></label>
+        <input type="url" placeholder="Paste URL here..." id="url" />
+      </div>
+
+      <!-- The form's dropdown -->
+      <div class="formbox2">
+        <div class="domainDropdown">
+          <label for="chooseDomain">Choose Domain</label>
+          <select name="chooseDomain">
+            <option value="Domain 1"></option>
+            <option selected value="Domain 2"></option>
+            <option value="Domain 3"></option>
+          </select>
+        </div>
+
+        <!-- Alias input box -->
+        <div class="aliasInput">
+          <label for="alias"></label>
+          <input type="text" name="alias" placeholder="Type Alias here" />
+        </div>
+      </div>
+
+      <!-- Trim url button -->
+      <div class="trimButton">
+        <button style="background-color: blue">
+          Trim URL
+          <img src="/assets/icons/magicwandIcon.svg" alt="A magic wand icon" />
+        </button>
+      </div>
+
+      <!-- Disclaimer text -->
+      <div class="urlInput4">
+        <p class="consentText">
+          By clicking TrimURL, I agree to the
+          <span id="agreement">Terms of Service, Privacy Policy</span>
+          and Use of Cookies.
+        </p>
+      </div>
+    </form>
+
+    <!-- The web page's fourth frame: Frame 4 (FAQs Accordion) -->
+    <h2>FAQs</h2>
+
+    <!-- Question 1 -->
+    <button class="accordion">How does URL shortening work?</button>
+    <div class="panel">
+      <p>
+        URL shortening works by taking a long URL and creating a shorter,
+        condensed version that redirects to the original URL. When a user clicks
+        on the shortened link, they are redirected to the intended destination.
+      </p>
+    </div>
+
+    <!-- Question 2 -->
+    <button class="accordion">
+      Is it necessary to create an account to use the URL shortening service?
+    </button>
+    <div class="panel">
+      <p>
+        Yes very necessary. For quick and easy access to all our services, get
+        started <a href="#">here</a>.
+      </p>
+    </div>
+
+    <!-- Question 3 -->
+    <button class="accordion">
+      Are the shortened links permanent? Will they expire?
+    </button>
+    <div class="panel">
+      <p>Yes they're permanent, No they will never expire</p>
+    </div>
+
+    <!-- Question 4 -->
+    <button class="accordion">
+      Are there any limitations on the number of URLs I can shorten?
+    </button>
+    <div class="panel">
+      <p>No there are zero limitations on the number of URLs you can shorten</p>
+    </div>
+
+    <!-- Question 5 -->
+    <button class="accordion">
+      Can I customize the shortened URLs to reflect my brand or content?
+    </button>
+    <div class="panel">
+      <p>Yes most definitely! See an example <a href="#">here</a>.</p>
+    </div>
+
+    <!-- Question 6 -->
+    <button class="accordion">
+      Is it necessary to create an account to use the URL shortening service?
+    </button>
+    <div class="panel">
+      <p>Yes you can, use our analytics tool <a href="#">here</a>.</p>
+    </div>
+
+    <!-- Question 7 -->
+    <button class="accordion">
+      How secure is the URL shortening service? Are the shortened links
+      protected against spam or malicious activity?
+    </button>
+    <div class="panel">
+      <p>100% secure. View our SSL certificate <a href="#">here</a>.</p>
+    </div>
+
+    <!-- Question 8 -->
+    <button class="accordion">What is a QR code and what can it do?</button>
+    <div class="panel">
+      <p>
+        A QR code is a type of barcode that can store various types of
+        information.
+        <br />
+        <br />
+        It can be scanned by smartphones or QR code readers to quickly access
+        the encoded data, such as website URLs, contact details, or product
+        information.
+      </p>
+    </div>
+
+    <!-- Question 9 -->
+    <button class="accordion">
+      Is there an API available for integrating the URL shortening service into
+      my own applications or websites?
+    </button>
+    <div class="panel">
+      <p>
+        No not at this time, but we'll let you know if that service gets added
+        to our offers in the future. Be the first to get notified
+        <a href="#">here</a>.
+      </p>
+    </div>
+
+    <!-- The web page's fifth frame: Frame 5 -->
+    <div class="frame4">
+      <h1 class="frame4header">Revolutionizing Link Optimization</h1>
+      <button class="frame4button">Get started</button>
+    </div>
+
+    <!-- The web page's sixth frame: Frame 6 -->
+    <div class="frame6left">
+      <div class="logoAndSocials">
+        <!-- Site Logo -->
+        <div class="footerLogo">
+          <img src="/assets/icons/logo.svg" alt="The Scissor brand logo" />
+        </div>
+
+        <!-- Site Socials -->
+        <div class="socials">
+          <a href="#">
+            <img src="/assets/icons/twitter.svg" alt="Twitter icon" />
+          </a>
+          <a href="#"
+            ><img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+          </a>
+          <a href="#"
+            ><img src="/assets/icons/linkedin.svg" alt="Linkedin icon" />
+          </a>
+          <a href="#"
+            ><img src="/assets/icons/facebook.svg" alt="Facebook icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="frame6right">
+      <div class="quickLinksCol1">
+        <!-- Quick links box 1: Why Scissor ? -->
+        <div class="quickLinks Box1">
+          <a href="#" class="qLinksText" id="qLinksTitle">Why Scissor ?</a>
+          <a href="#" class="qLinksText">Scissor 101</a>
+          <a href="#" class="qLinksText">Integrations & API</a>
+          <a href="#" class="qLinksText">Pricing</a>
+        </div>
+
+        <!-- Quick links box 2: Resources -->
+        <div class="quickLinks Box2">
+          <a href="#" class="qLinksText" id="qLinksTitle">Resources</a>
+          <a href="#" class="qLinksText">Blog</a>
+          <a href="#" class="qLinksText">Resource Library</a>
+          <a href="#" class="qLinksText">Developers</a>
+          <a href="#" class="qLinksText">App Connectors</a>
+          <a href="#" class="qLinksText">Support</a>
+          <a href="#" class="qLinksText">Trust Center</a>
+          <a href="#" class="qLinksText">Browser Extension</a>
+          <a href="#" class="qLinksText">Mobile App</a>
+        </div>
+      </div>
+
+      <!-- Quick links box 3: Solutions -->
+      <div class="quickLinksCol2">
+        <div class="quickLinks Box3">
+          <a href="#" class="qLinksText" id="qLinksTitle">Solutions</a>
+          <a href="#" class="qLinksText">Social Media</a>
+          <a href="#" class="qLinksText">Digital Marketing</a>
+          <a href="#" class="qLinksText">Customer Service</a>
+          <a href="#" class="qLinksText">For Developers</a>
+        </div>
+
+        <!-- Quick links box 4: Features -->
+        <div class="quickLinks Box4">
+          <a href="#" class="qLinksText" id="qLinksTitle">Features</a>
+          <a href="#" class="qLinksText">Branded Links </a>
+          <a href="#" class="qLinksText">Mobile Links </a>
+          <a href="#" class="qLinksText">Campaign </a>
+          <a href="#" class="qLinksText">Management & </a>
+          <a href="#" class="qLinksText">Analytics </a>
+          <a href="#" class="qLinksText">QR Code generation</a>
+        </div>
+      </div>
+
+      <!-- Quick links box 5: Products -->
+      <div class="quickLinksCol3">
+        <div class="quickLinks Box5">
+          <a href="#" class="qLinksText" id="qLinksTitle">Products</a>
+          <a href="#" class="qLinksText">Link Management </a>
+          <a href="#" class="qLinksText">QR Codes </a>
+          <a href="#" class="qLinksText">Link-in-bio</a>
+        </div>
+
+        <!-- Quick links box 6: Legal -->
+        <div class="quickLinks Box6">
+          <a href="#" class="qLinksText" id="qLinksTitle">Legal</a>
+          <a href="#" class="qLinksText">Privacy Policy </a>
+          <a href="#" class="qLinksText">Cookie Policy </a>
+          <a href="#" class="qLinksText">Terms of Service </a>
+          <a href="#" class="qLinksText">Acceptable Use Policy </a>
+          <a href="#" class="qLinksText">Code of Conduct</a>
+        </div>
+      </div>
+
+      <!-- Quick links box 7: Company -->
+      <div class="quickLinksCol4">
+        <div class="quickLinks Box7">
+          <a href="#" class="qLinksText" id="qLinksTitle">Company</a>
+          <a href="#" class="qLinksText">About Scissor </a>
+          <a href="#" class="qLinksText">Careers </a>
+          <a href="#" class="qLinksText">Partners </a>
+          <a href="#" class="qLinksText"> Press </a>
+          <a href="#" class="qLinksText">Contact </a>
+          <a href="#" class="qLinksText">Reviews</a>
+        </div>
+      </div>
+
+      <div class="footnote">
+        <a href="#">Terms of service |</a>
+        <a href="#">Security</a>
+        <a href="#">&copy; | Scissor 2023 </a>
+      </div>
+    </div>
+  </body>
+</html>
