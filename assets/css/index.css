@@ -1,116 +1,191 @@
 /* General styling */
-body {
-    font-family: 'Gilroy', sans-serif;
-}
 
+/* Margin alignment */
 * {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
+/* Font */
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+/* All links */
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
+/* All buttons */
 button {
-    color: #fff;
-    background-color: #005AE2;
-    border-radius: 2rem;
-    border: 0.5rem solid transparent;
-    width: 8.875rem;
-    height: 2.75rem;
-    padding: 0.75rem 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #005ae2;
+  border-radius: 2rem;
+  border: 0.5rem solid transparent;
+  width: 8.875rem;
+  height: 2.75rem;
+  padding: 0.75rem 1.5rem;
 }
 
-li {
-    list-style: none;
+#getCustomPricing {
+  color: #005ae2;
+  background-color: #fff;
+  border: 0.1rem solid #005ae2;
+}
+
+/* list settings */
+.navLinks li {
+  list-style: none;
+}
+
+.features li {
+  list-style-image: url(/assets/icons/checkCircleBlue.svg);
+}
+
+#featuresMiddle li {
+  list-style-image: url(/assets/icons/checkCircleWhite.svg);
 }
 
 /* Hero section header  */
 .header {
-    display: flex;
-    align-items: center;
-    gap: 8.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8.75rem;
 }
 
 .navLogo {
-    display: flex;
-    padding: 0.5rem;
-    /* align-items: flex-start; */
-    gap: 0.5rem;
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 .navLinks {
-    display: flex;
-    align-items: flex-start;
-    gap: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
 .ctaLinks {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .ctaLogin {
-    font-size: 1rem;
-    font-family: "Gilroy-SemiBold";
-    
+  font-size: 1rem;
+  font-family: "Gilroy-SemiBold";
+}
+
+/* Frame 1 (Hero Section) */
+
+.heroSectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroHeaderBox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroHeading {
+  color: #141414;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Gilroy-Bold", "sans-serif-bold";
+  line-height: 6rem;
+}
+
+.blueMarkerLine {
+  margin-top: -5rem;
+}
+
+.heroMainCta {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.illustrationBox {
+  /* layout */
+  display: inline-flex;
+  padding: 2.5rem 3.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  /* border */
+  border-radius: 24px;
+  border: 0.1rem solid #005ae2;
+  background: rgba(254, 254, 254, 0.1);
+  backdrop-filter: blur(106px);
 }
 
 /* Frame 2 */
 .frame2Top {
-    display: flex;
+  display: flex;
+}
+
+/* Frame 3 */
+.frame3Buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
 }
 
 .footnote {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
-
 
 /* Styling the backgrounds */
 .frame1heroSection {
-    background-image: url(/assets/backgrounds/heroSection.svg);
+  background-image: url(/assets/backgrounds/heroSection.svg);
 }
 
 .frame2Top {
-    background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 /* Styling special texts (spans) */
 .possibilities {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 .urlShortening {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 #myUrls {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 #ctaLogin {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 .scissors {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 .pricePerfect {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 .consentText {
-    color: #005AE2;
+  color: #005ae2;
 }
 
 #agreement {
-    font-weight: bold;
+  font-weight: bold;
 }
