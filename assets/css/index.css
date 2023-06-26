@@ -7,7 +7,7 @@
 
 /* Font */
 body {
-  font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy-medium", "sans-serif-medium";
 }
 
 /* All links */
@@ -127,7 +127,7 @@ button {
   align-items: flex-start;
   gap: 1rem;
   padding: 2.5rem 3.75rem;
-  width: 30rem;
+  width: 35rem;
   height: 6rem;
 
   position: relative;
@@ -140,8 +140,16 @@ button {
   backdrop-filter: blur(106px);
 }
 
+.linksIllustration {
+    display: flex;
+    margin-right: 20rem;
+}
+
 .illustrationBoxText {
   text-align: center;
+  margin-left: 5rem;
+  font-size: 0.85rem;
+  font-family: "Gilroy-medium", "sans-serif-medium";
 }
 
 /* Frame 2 */
@@ -179,12 +187,9 @@ button {
 }
 
 .geometricBg {
-  /* max-width: 13.6rem; */
-  /* max-height: 13rem; */
   position: relative;
   bottom: 14.2rem;
   left: -5rem;
-  /* z-index: -1; */
 }
 
 .frame2Top {
