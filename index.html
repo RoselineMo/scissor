@@ -32,7 +32,7 @@
     <!-- Link for "gilroy" font family -->
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
 
-    <!-- Links to reset default css (using normalize.css) -->
+    <!-- Link to reset default-css (using normalize.css) -->
     <link
       href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
       rel="stylesheet"
@@ -87,6 +87,10 @@
           <!-- The blue marker line -->
           <div class="blueMarkerLine">
             <img
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
               src="/assets/icons/vector3.svg"
               alt="A blue marker line"
               class="blueMarkerLine"
@@ -179,15 +183,17 @@
     <div class="frame2">
       <!-- Frame 2 Top Heading -->
       <div class="frame2Top">
-        <div class="frame2TopHeader">
-          <h1 class="frame2Header">
-            One Stop. <br> Four
-            <span class="possibilities">Possibilities</span>.
-          </h1>
-        </div>
+        <!-- <div class="frame2TopHeader">
+          
+        </div> -->
+
+        <h1 class="frame2Header">
+          One Stop. <br />
+          Four <span class="possibilities">Possibilities</span>.
+        </h1>
 
         <!-- Frame 2 Top Metrics -->
-        <div class="frame2Top">
+        <div class="frame2TopMetrics">
           <!-- Top Metrics text 1 -->
           <div class="topMetrics">
             <h3 class="topMetricsText">3M</h3>
@@ -197,13 +203,19 @@
           <!-- Top Metrics text 2 -->
           <div class="topMetrics">
             <h3 class="topMetricsText">60M</h3>
-            <p class="topMetricsNumber">Links & QR codes <br> created</p>
+            <p class="topMetricsNumber">
+              Links & QR codes <br />
+              created
+            </p>
           </div>
 
           <!-- Top Metrics text 3 -->
           <div class="topMetrics">
             <h3 class="topMetricsText">1B</h3>
-            <p class="topMetricsNumber">Clicked & Scanned <br> connections</p>
+            <p class="topMetricsNumber">
+              Clicked & Scanned <br />
+              connections
+            </p>
           </div>
 
           <!-- Top Metrics text 4 -->
@@ -216,78 +228,89 @@
 
       <!-- Frame 2's Bottom Content-->
       <div class="frame2Bottom">
-        <!-- Section One's Bottom left header -->
+        <!-- Bottom left header -->
         <div class="bottomLeft">
-          <div class="bottomLeftHeader">
+          <div class="bottomLeftIcon">
             <img
               src="/assets/icons/line.svg"
               alt="A line icon"
               class="gradientLineIcon"
             />
+          </div>
+
+          <div class="bottomLeftText">
             <h1>
               Why choose
               <span class="scissors">Scissors</span>
             </h1>
-          </div>
 
-          <!-- Frame 2's Bottom left text -->
-          <div class="bottomLeftText">
+            <!-- Frame 2 Bottom left text -->
             <p>
-              Scissors is the hub of everything that has to do with your link
-              management. We shorten your URLs, allow you creating custom ones
-              for your personal, business, event usage. Our swift QR code
-              creation, management and usage tracking with advance analytics for
-              all of these is second to none.
+              Scissors is the hub of everything that has to do <br />
+              with your link management. We shorten your URLs,<br />
+              allow you creating custom ones for your personal,<br />
+              business, event usage. Our swift QR code<br />
+              creation, management and usage tracking with<br />
+              advance analytics for all of these is second to<br />
+              none.
             </p>
           </div>
         </div>
 
-        <!-- Frame 2's Bottom right -->
+        <!-- Frame 2 Bottom right -->
         <div class="frame2BottomRight">
-          <!-- Bottom right text 1 -->
-          <div class="bottomRightText">
-            <img
-              src="/assets/icons/link2Colored.svg"
-              alt="A colored link icon"
-            />
-            <h3>URL Shortening</h3>
-            <p>
-              Scissor allows you to shorten URLs of your business, events.
-              Shorten your URL at scale, URL redirects.
-            </p>
+          <!-- Bottom right column 1 -->
+          <div class="bottomRightCol1">
+            <!-- Bottom right text 1 -->
+            <div class="bottomRight">
+              <img
+                src="/assets/icons/ellipseLink.svg"
+                alt="A colored link icon"
+              />
+              <h3>URL Shortening</h3>
+              <p>
+                Scissor allows you to shorten URLs of your <br />
+                business, events. Shorten your URL at scale, URL redirects.
+              </p>
+            </div>
+
+            <!-- Bottom right text 2 -->
+            <div class="bottomRight">
+              <img
+                src="/assets/icons/ellipseGrid.svg"
+                alt="An ellipse grid icon"
+              />
+              <h3>QR Codes</h3>
+              <p>
+                Generate QR codes to your business, events. <br />
+                Bring your audience and customers to your doorstep with this
+                scan and go solution.
+              </p>
+            </div>
           </div>
 
-          <!-- Bottom right text 2 -->
-          <div class="bottomRightText">
-            <img
-              src="/assets/icons/ellipseGrid.svg"
-              alt="An ellipse grid icon"
-            />
-            <h3>QR Codes</h3>
-            <p>
-              Generate QR codes to your business, events. Bring your audience
-              and customers to your doorstep with this scan and go solution.
-            </p>
-          </div>
+          <!-- Bottom right column 2 -->
+          <div class="bottomRightCol2">
+            <!-- Bottom right text 3 -->
+            <div class="bottomRight">
+              <img src="/assets/icons/ellipseEdit.svg" alt="An edit icon" />
+              <h3>Custom URLs</h3>
+              <p>
+                With Scissor, you can create custom URLs, <br />
+                with the length you want! A solution for socials and businesses.
+              </p>
+            </div>
 
-          <!-- Bottom right text 3 -->
-          <div class="bottomRightText">
-            <img src="/assets/icons/edit.svg" alt="An edit icon" />
-            <h3>Custom URLs</h3>
-            <p>
-              With Scissor, you can create custom URLs, with the length you
-              want! A solution for socials and businesses.
-            </p>
-          </div>
-
-          <!-- Bottom right text 4 -->
-          <div class="bottomRightText">
-            <img src="/assets/icons/activity.svg" alt="An analytics icon" />
-            <h3>Data Analytics</h3>
-            <p>
-              Receive data on the usage of either your shortened URL, custom
-              URLs or generated QR codes. Embedded to monitor progress.
-            </p>
+            <!-- Bottom right text 4 -->
+            <div class="bottomRight">
+              <img src="/assets/icons/analytics.svg" alt="An analytics icon" />
+              <h3>Data Analytics</h3>
+              <p>
+                Receive data on the usage of either your <br />
+                shortened URL, custom URLs or generated QR codes. Embedded to
+                monitor progress.
+              </p>
+            </div>
           </div>
         </div>
       </div>
