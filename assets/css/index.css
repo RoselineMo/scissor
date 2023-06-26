@@ -110,7 +110,7 @@ button {
 }
 
 .heroSubHeading {
-    text-align: center;
+  text-align: center;
 }
 
 .heroMainCta {
@@ -127,13 +127,21 @@ button {
   align-items: flex-start;
   gap: 1rem;
   padding: 2.5rem 3.75rem;
-  width: 40em;
+  width: 30rem;
+  height: 6rem;
+
+  position: relative;
+  left: 7rem;
 
   /* border */
   border-radius: 24px;
   border: 0.1rem solid #005ae2;
   background: rgba(254, 254, 254, 0.1);
   backdrop-filter: blur(106px);
+}
+
+.illustrationBoxText {
+  text-align: center;
 }
 
 /* Frame 2 */
@@ -155,9 +163,28 @@ button {
 
 /* Styling the backgrounds */
 .frame1heroSection {
-    background-image: url(/assets/backgrounds/heroSection.svg);
-    width: 80rem;
-    height: 45rem;
+  background-image: url(/assets/backgrounds/aurora.svg);
+  background-clip: padding-box;
+  width: 80rem;
+  height: 64rem;
+}
+
+.teardropBg {
+  max-width: 13.7rem;
+  max-height: 13rem;
+  position: relative;
+  bottom: 14.2rem;
+  left: -5rem;
+  z-index: -1;
+}
+
+.geometricBg {
+  /* max-width: 13.6rem; */
+  /* max-height: 13rem; */
+  position: relative;
+  bottom: 14.2rem;
+  left: -5rem;
+  /* z-index: -1; */
 }
 
 .frame2Top {
@@ -195,4 +222,10 @@ button {
 
 #agreement {
   font-weight: bold;
+}
+
+/* Styling the icons */
+.linkIcon {
+  width: 4rem;
+  height: 4rem;
 }
