@@ -7,7 +7,8 @@
 
 /* Font */
 body {
-    font-family: "Gilroy-medium", "sans-serif-medium";
+  font-family: "Gilroy-Medium", "sans-serif";
+  overflow-x: hidden;
 }
 
 /* All links */
@@ -56,6 +57,7 @@ button {
   display: flex;
   align-items: center;
   gap: 8.75rem;
+  padding-top: 1rem;
 }
 
 .navLogo {
@@ -141,8 +143,8 @@ button {
 }
 
 .linksIllustration {
-    display: flex;
-    margin-right: 20rem;
+  display: flex;
+  margin-right: 20rem;
 }
 
 .illustrationBoxText {
@@ -152,29 +154,13 @@ button {
   font-family: "Gilroy-medium", "sans-serif-medium";
 }
 
-/* Frame 2 */
-.frame2Top {
-  display: flex;
-}
-
-/* Frame 3 */
-.frame3Buttons {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-}
-
-.footnote {
-  display: flex;
-  align-items: flex-end;
-}
-
 /* Styling the backgrounds */
-.frame1heroSection {
+.hero {
   background-image: url(/assets/backgrounds/aurora.svg);
-  background-clip: padding-box;
-  width: 80rem;
-  height: 64rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 51rem;
 }
 
 .teardropBg {
@@ -192,11 +178,35 @@ button {
   left: -5rem;
 }
 
+/* Frame 2 Styling */
 .frame2Top {
-  background-color: #f9fbfd;
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+    gap: 2.7rem;
+    min-width: max-content;
+    align-self: baseline;
+    height: max-content;
 }
 
-/* Styling special texts (spans) */
+.topMetricsText {
+    font-size: 2rem;
+    font-weight: bold;
+    /* padding-top: 1rem; */
+}
+
+
+.topMetricsNumber {
+    color: #141414;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+}
+
+
+/* Styling special texts (spans, unique links) */
 .possibilities {
   color: #005ae2;
 }
@@ -229,8 +239,29 @@ button {
   font-weight: bold;
 }
 
+.learnMore {
+  color: #005ae2;
+}
+
+#concise, #shareable {
+    font-family: "Gilroy-Bold", "sans-serif-bold";
+}
+
 /* Styling the icons */
 .linkIcon {
   width: 4rem;
   height: 4rem;
 }
+
+/* Frame 3 */
+.frame3Buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .footnote {
+    display: flex;
+    align-items: flex-end;
+  }
+  
