@@ -7,7 +7,7 @@
     <!-- Title of the webpage -->
     <title>Figma To Code - Scissors</title>
 
-    <!-- Script for Frame 4 (FAQs Accordion) -->
+    <!-- Script for Frame 5 (FAQs Accordion) -->
     <script defer>
       // Get all accordion buttons
       const accordions = document.getElementsByClassName("accordion");
@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <!-- The Webpage's Frame 1: Hero section -->
+    <!-- Frame 1: Hero section -->
     <div class="hero">
       <!-- Hero header, containing site logo, navigation links and CTA -->
       <div class="header">
@@ -179,7 +179,7 @@
       </main>
     </div>
 
-    <!-- The web page's second frame: Frame 2 -->
+    <!-- Frame 2 -->
     <div class="frame2">
       <!-- Frame 2 Top Heading -->
       <div class="frame2Top">
@@ -226,7 +226,7 @@
         </div>
       </div>
 
-      <!-- Frame 2's Bottom Content-->
+      <!-- Frame 2 Bottom Content-->
       <div class="frame2Bottom">
         <!-- Bottom left header -->
         <div class="bottomLeft">
@@ -234,7 +234,7 @@
             <img
               src="/assets/icons/line.svg"
               alt="A line icon"
-              class="gradientLineIcon"
+              class="LineIcon"
             />
           </div>
 
@@ -316,95 +316,102 @@
       </div>
     </div>
 
-    <!-- The web page's third frame: Frame 3 -->
+    <!-- Frame 3 -->
     <div class="frame3">
       <!-- Frame 3 Heading -->
       <div class="frame3Heading">
-        <img
-          src="/assets/icons/line.svg"
-          alt="A line icon"
-          class="gradientLineIcon"
-        />
-        <h3>
-          A
-          <span class="pricePerfect">price perfect</span>
-          for your needs
-        </h3>
-      </div>
+        <div class="headerWithIcon">
+          <div class="frame3LineIcon">
+            <img
+              src="/assets/icons/line.svg"
+              alt="A line icon"
+              class="LineIcon"
+            />
+          </div>
+          <h3>
+            A
+            <span class="pricePerfect">price perfect</span>
+            for your needs.
+          </h3>
+        </div>
 
-      <!--Frame 3 subheading  -->
-      <div class="frame3Subheading">
-        <p>
+        <!--Frame 3 subheading  -->
+
+        <small>
           From catering for your personal, business, event, socials needs, you
-          can be rest assured we have you in mind in our pricing.
-        </p>
+          can be <br> rest assured we have you in mind in our pricing.
+        </small>
       </div>
 
+      
       <!-- Frame 3 Pricing -->
-      <div class="priceCatalogue">
+      <div class="card">
         <!-- Basic plan -->
-        <div class="priceCatalogue1">
-          <a href="#" class="basicClickable">
-            <div class="basicContainer"></div>
-            <p class="basic">Basic</p>
-            <p class="basicFee">Free</p>
-            <p class="freePlanText">Free plan for all users</p>
+        <div class="card1">
+          <a href="#">
+            <div class="container">
+              <p class="title">Basic</p>
+              <p class="fee">Free</p>
+              <p class="description">Free plan for all users</p>
 
-            <ul class="features">
-              <li>Unlimited URL Shortening</li>
-              <li>Basic Link Analytics</li>
-              <li>Customizable Short Links</li>
-              <li>Standard Support</li>
-              <li>Ad-supported</li>
-            </ul>
+              <ul class="features">
+                <li>Unlimited URL Shortening</li>
+                <li>Basic Link Analytics</li>
+                <li>Customizable Short Links</li>
+                <li>Standard Support</li>
+                <li>Ad-supported</li>
+              </ul>
+            </div>
           </a>
         </div>
 
         <!-- Professional plan -->
-        <div class="priceCatalogue2">
-          <a href="#" class="professionalClickable">
-            <div class="professionalContainer"></div>
-            <p class="professional">Professional</p>
-            <p class="professionalFee">$15/month</p>
-            <p class="professionalPlanText">Ideal for business creators</p>
+        <div class="card2">
+          <a href="#" >
+            <div class="container">
+              <p class="title title2">Professional</p>
+              <p class="fee" id="fee">$15/month</p>
+              <p class="description description2">Ideal for business creators</p>
 
-            <ul id="featuresMiddle">
-              <li>Unlimited URL Shortening</li>
-              <li>Basic Link Analytics</li>
-              <li>Customizable Short Links</li>
-              <li>Standard Support</li>
-              <li>Ad-supported</li>
-            </ul>
+              <ul id="features">
+                <li>Enhanced Link Analytics</li>
+                <li>Custom Branded Domains</li>
+                <li>Advanced Link Customization</li>
+                <li>Priority Support</li>
+                <li>Ad-free Experience</li>
+              </ul>
+            </div>
           </a>
         </div>
 
         <!-- Teams plan -->
-        <div class="priceCatalogue3">
-          <a href="#" class="teamsClickable">
-            <div class="teamsPlanContainer"></div>
-            <p class="teams">Teams</p>
-            <p class="teamsFee">$25/month</p>
-            <p class="freePlanText">Share with up to 10 users</p>
+        <div class="card3">
+          <a href="#">
+            <div class="container">
+              <p class="title">Teams</p>
+              <p class="fee">$25/month</p>
+              <p class="description">Share with up to 10 users</p>
 
-            <ul class="features">
-              <li>Unlimited URL Shortening</li>
-              <li>Basic Link Analytics</li>
-              <li>Customizable Short Links</li>
-              <li>Standard Support</li>
-              <li>Ad-supported</li>
-            </ul>
+              <ul class="features">
+                <li>Team Collaboration</li>
+                <li>User Roles and Permissions</li>
+                <li>Enhanced Security</li>
+                <li>API Access</li>
+                <li>Dedicated Account Manager</li>
+              </ul>
+            </div>
           </a>
         </div>
       </div>
 
       <div class="frame3Buttons">
-        <button id="getCustomPricing">Get Custom Pricing</button>
-        <button id="selectPricing">Select Pricing</button>
+        <button id="custom">Get Custom Pricing</button>
+        <button id="select">Select Pricing</button>
       </div>
     </div>
 
-    <!-- The web page's fourth frame: Frame 4 (the TrimURL form)-->
-    <form method="post" class="UrlInputForm">
+    <!-- Frame 4 (TrimURL form)-->
+    <form method="post" class="form">
       <!-- The form's url input box -->
       <div class="urlInput">
         <label name="url" for="url" type="url"></label>
@@ -447,7 +454,7 @@
       </div>
     </form>
 
-    <!-- The web page's fourth frame: Frame 4 (FAQs Accordion) -->
+    <!-- Frame 5 (FAQs Accordion) -->
     <h2>FAQs</h2>
 
     <!-- Question 1 -->
@@ -539,13 +546,13 @@
       </p>
     </div>
 
-    <!-- The web page's fifth frame: Frame 5 -->
+    <!-- Frame 6 -->
     <div class="frame4">
       <h1 class="frame4header">Revolutionizing Link Optimization</h1>
       <button class="frame4button">Get started</button>
     </div>
 
-    <!-- The web page's sixth frame: Frame 6 -->
+    <!-- Frame 7 -->
     <div class="frame6left">
       <div class="logoAndSocials">
         <!-- Site Logo -->

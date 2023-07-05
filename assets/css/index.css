@@ -26,17 +26,34 @@ button {
   align-items: center;
   color: #fff;
   background-color: #005ae2;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: 0.5rem solid transparent;
   width: 8.875rem;
   height: 2.75rem;
   padding: 0.75rem 1.5rem;
 }
 
-#getCustomPricing {
+#custom {
   color: #005ae2;
   background-color: #fff;
   border: 0.1rem solid #005ae2;
+  width: max-content;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+#select {
+  width: 12rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.frame3Buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 /* list settings */
@@ -46,10 +63,70 @@ button {
 
 .features li {
   list-style-image: url(/assets/icons/checkCircleBlue.svg);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-#featuresMiddle li {
+#features li {
   list-style-image: url(/assets/icons/checkCircleWhite.svg);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+ul {
+  padding: 1.4rem;
+}
+
+.form {
+  background-image: url(/assets/backgrounds/aqua.svg);
+}
+
+/* Styling special texts (spans, unique links) */
+.possibilities {
+  color: #005ae2;
+}
+
+.urlShortening {
+  color: #005ae2;
+}
+
+#myUrls {
+  color: #005ae2;
+}
+
+#ctaLogin {
+  color: #005ae2;
+}
+
+.scissors {
+  color: #005ae2;
+}
+
+.pricePerfect {
+  color: #005ae2;
+}
+
+.consentText {
+  color: #005ae2;
+}
+
+#agreement {
+  font-weight: bold;
+}
+
+.learnMore {
+  color: #005ae2;
+}
+
+#concise,
+#shareable {
+  font-family: "Gilroy-Bold", "sans-serif-bold";
+}
+
+/* Styling the icons */
+.linkIcon {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Hero section header  */
@@ -180,15 +257,15 @@ button {
 
 /* Frame 2 Styling */
 .frame2Top {
-    display: flex;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    gap: 0.5rem;
-    background-color: #F9FBFD;
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  gap: 0.5rem;
+  background-color: #f9fbfd;
 }
 
 .frame2Header {
-    padding-left: 10rem;
+  padding-left: 10rem;
 }
 
 .frame2TopMetrics {
@@ -200,130 +277,172 @@ button {
 }
 
 .topMetricsText {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .topMetricsNumber {
-    color: #141414;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    /* padding-top: 1rem; */
+  color: #141414;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  /* padding-top: 1rem; */
 }
 
 .frame2Bottom {
-    display: flex;
-    gap: 3rem;
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 3rem;
-    padding-bottom: 2rem;
+  display: flex;
+  gap: 3rem;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
 }
 
 .frame2BottomRight {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .bottomRightCol1 {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-bottom: 3rem;
-    min-width: 20.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  min-width: 20.5rem;
 }
 
 .bottomRightCol2 {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-bottom: 3rem;
-    min-width: 20.5rem;
-    padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  min-width: 20.5rem;
+  padding-right: 5rem;
 }
 
 .bottomRightCol1 img,
 .bottomRightCol2 img {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .bottomLeft {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .bottomLeftIcon {
-    margin-left: 7rem;
-    margin-top: 1rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
 }
 
 .bottomLeftText {
-    display: flex;
-    flex-direction: column;
-    min-width: 25rem;
-    margin-left: -2.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 25rem;
+  margin-left: -2.5rem;
 }
 
 .bottomLeftText h1 {
-    margin-left: 1rem;
-} 
-
-/* Styling special texts (spans, unique links) */
-.possibilities {
-  color: #005ae2;
+  margin-left: 1rem;
 }
 
-.urlShortening {
-  color: #005ae2;
+/* Frame 3 Styling */
+
+.frame3 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
-#myUrls {
-  color: #005ae2;
+.headerWithIcon {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Gilroy-bold", "sans-serif-bold";
 }
 
-#ctaLogin {
-  color: #005ae2;
+.frame3LineIcon {
+  margin-right: 0.5rem;
 }
 
-.scissors {
-  color: #005ae2;
+.frame3Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
-.pricePerfect {
-  color: #005ae2;
+small {
+  text-align: center;
+  font-size: 15px;
 }
 
-.consentText {
-  color: #005ae2;
+.card {
+  display: flex;
+  cursor: pointer;
 }
 
-#agreement {
-  font-weight: bold;
+.card1 {
+  border: 0.4px solid #005ae2;
+  padding: 1.5rem 6rem 3rem 3.5rem;
+  height: 20rem;
+  width: 15rem;
+  margin-top: 3rem;
+  border-radius: 0.7rem;
+  margin-right: 3.5rem;
+  z-index: -1;
 }
 
-.learnMore {
-  color: #005ae2;
+.card2 {
+  background-color: #1e3448;
+  padding: 2rem 5rem 9rem 3.5rem;
+  height: 20rem;
+  width: 13.5rem;
+  color: #ffff;
+  border-radius: 0.7rem;
+  position: absolute;
+  right: 29.05rem;
 }
 
-#concise, #shareable {
-    font-family: "Gilroy-Bold", "sans-serif-bold";
+.card3 {
+  border: 0.4px solid #005ae2;
+  padding: 1.5rem 4rem 3rem 7rem;
+  height: 20rem;
+  width: 15.5rem;
+  margin-top: 3rem;
+  border-radius: 0.7rem;
+  margin-left: 8.5rem;
+  z-index: -1;
 }
 
-/* Styling the icons */
-.linkIcon {
-  width: 4rem;
-  height: 4rem;
+.title {
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-family: "Gilroy-regular", sans-serif;
+  margin-bottom: 1.5rem;
 }
 
-/* Frame 3 */
-.frame3Buttons {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-  
-  .footnote {
-    display: flex;
-    align-items: flex-end;
-  }
-  
+.title2 {
+  margin-top: 1rem;
+}
+
+.fee {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Gilroy-bold", "sans-serif-bold";
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 0rem;
+}
+
+.card li {
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: max-content;
+}
