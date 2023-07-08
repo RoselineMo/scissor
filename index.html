@@ -57,7 +57,12 @@
         <!-- Site's navigation links -->
         <nav class="navLinks">
           <a><li id="myUrls">My URLS</li></a>
-          <a><li>Features</li></a>
+          <a><li class="ft">Features</li></a>
+            <!-- <img
+              src="assets/icons/chevron-down.svg"
+              alt="A chevron down icon"
+              class="chevron"
+            /> -->
           <a><li>Pricing</li></a>
           <a><li>Analytics</li></a>
           <a><li>FAQs</li></a>
@@ -339,11 +344,11 @@
 
         <small>
           From catering for your personal, business, event, socials needs, you
-          can be <br> rest assured we have you in mind in our pricing.
+          can be <br />
+          rest assured we have you in mind in our pricing.
         </small>
       </div>
 
-      
       <!-- Frame 3 Pricing -->
       <div class="card">
         <!-- Basic plan -->
@@ -367,11 +372,13 @@
 
         <!-- Professional plan -->
         <div class="card2">
-          <a href="#" >
+          <a href="#">
             <div class="container">
               <p class="title title2">Professional</p>
               <p class="fee" id="fee">$15/month</p>
-              <p class="description description2">Ideal for business creators</p>
+              <p class="description description2">
+                Ideal for business creators
+              </p>
 
               <ul id="features">
                 <li>Enhanced Link Analytics</li>
@@ -411,48 +418,74 @@
     </div>
 
     <!-- Frame 4 (TrimURL form)-->
-    <form method="post" class="form">
-      <!-- The form's url input box -->
-      <div class="urlInput">
-        <label name="url" for="url" type="url"></label>
-        <input type="url" placeholder="Paste URL here..." id="url" />
-      </div>
+    <div class="frame4">
+      <form method="post">
+        <div class="form">
+          <div class="wrapper">
+            <!-- The form's url input box -->
+            <div>
+              <label name="url" for="url" type="url"></label>
+              <input
+                type="url"
+                placeholder="Paste URL here..."
+                id="url"
+                class="blue url"
+              />
+            </div>
 
-      <!-- The form's dropdown -->
-      <div class="formbox2">
-        <div class="domainDropdown">
-          <label for="chooseDomain">Choose Domain</label>
-          <select name="chooseDomain">
-            <option value="Domain 1"></option>
-            <option selected value="Domain 2"></option>
-            <option value="Domain 3"></option>
-          </select>
+            <!-- The form's dropdown -->
+            <div class="formBox2">
+              <div class="dropdown">
+                <label for="chooseDomain" class="blue">Choose Domain</label>
+                <select name="chooseDomain">
+                  <option value="Domain 1"></option>
+                  <option selected value="Domain 2"></option>
+                  <option value="Domain 3"></option>
+                </select>
+                <img
+                  src="assets/icons/chevronDownBlue.svg"
+                  alt="A blue chevron down icon"
+                  class="chevronblue"
+                />
+              </div>
+
+              <!-- Alias input box -->
+              <div class="alias">
+                <label for="alias"></label>
+                <input
+                  type="text"
+                  name="alias"
+                  placeholder="Type Alias here"
+                  class="blue"
+                />
+              </div>
+            </div>
+
+            <!-- Trim url button -->
+            <div>
+              <button class="trim">
+                Trim URL
+                <img
+                  src="/assets/icons/magicwandIcon.svg"
+                  alt="A magic wand icon"
+                  class="wand"
+                />
+              </button>
+            </div>
+
+            <!-- Disclaimer text -->
+            <div>
+              <p class="consent">
+                By clicking TrimURL, I agree to the
+                <span id="agreement">Terms of Service</span>, <br />
+                <span id="agreement">Privacy Policy</span>
+                and Use of Cookies.
+              </p>
+            </div>
+          </div>
         </div>
-
-        <!-- Alias input box -->
-        <div class="aliasInput">
-          <label for="alias"></label>
-          <input type="text" name="alias" placeholder="Type Alias here" />
-        </div>
-      </div>
-
-      <!-- Trim url button -->
-      <div class="trimButton">
-        <button style="background-color: blue">
-          Trim URL
-          <img src="/assets/icons/magicwandIcon.svg" alt="A magic wand icon" />
-        </button>
-      </div>
-
-      <!-- Disclaimer text -->
-      <div class="urlInput4">
-        <p class="consentText">
-          By clicking TrimURL, I agree to the
-          <span id="agreement">Terms of Service, Privacy Policy</span>
-          and Use of Cookies.
-        </p>
-      </div>
-    </form>
+      </form>
+    </div>
 
     <!-- Frame 5 (FAQs Accordion) -->
     <h2>FAQs</h2>
