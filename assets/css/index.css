@@ -148,9 +148,16 @@ ul {
   gap: 2.5rem;
 }
 
-/* .ft::after {
+.ft {
+  position: relative;
+}
+
+.ft::after {
   content: url(/assets/icons/chevron-down.svg);
-} */
+  position: absolute;
+  top: -15%;
+  left: 100%;
+}
 
 .ctaLinks {
   display: flex;
@@ -264,6 +271,22 @@ ul {
   background-repeat: none;
   height: 72vh;
   width: 100vw;
+}
+
+.frame5 {
+  background-image: url(/assets/backgrounds/aqua2.svg);
+}
+
+.frame6 {
+  background-image: url(/assets/backgrounds/aqua5.svg);
+  background-size: cover;
+  background-repeat: none;
+  height: 72vh;
+  width: 100vw;
+}
+
+.footer {
+  background-image: url(/assets/backgrounds/aqua4.svg);
 }
 
 /* Frame 2 Styling */
@@ -526,7 +549,6 @@ select {
   padding-left: 1.6rem;
 }
 
-
 .alias {
   width: 9.67rem;
   height: 1.7rem;
@@ -541,11 +563,99 @@ select {
   padding: 0.35rem 0.8rem 0.2rem;
   position: relative;
   left: 0.05rem;
-  background-color: #005AE2;
+  background-color: #005ae2;
   padding-left: 7.7rem;
   font-size: 1rem;
 }
 
 .wand {
   padding-right: 7.8rem;
+}
+
+/* Frame 5 styling */
+.frame5 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq::before {
+  content: url(/assets/icons/line.svg);
+  margin-right: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.faq {
+  font-size: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ACCORDION */
+
+.accordion {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #dcd9d9;
+  transition: border-color 0.3s ease;
+  padding: 0.9rem;
+}
+
+.accordion-question {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem;
+}
+
+.accordion-answer {
+  display: none;
+  padding: 0.8rem;
+}
+
+.accordion-question.expanded::after {
+  content: "-";
+}
+
+.accordion-question:after {
+  content: "+";
+}
+
+.accordion-question:hover {
+  border-left: 5px solid #d3e4fe;
+  border-right: 5px solid #d3e4fe;
+  border-top: 5px solid #d3e4fe;
+  border-bottom: 5px solid #d3e4fe;
+  background-color: transparent;
+}
+
+.accordion-answer:hover {
+  border-color: transparent;
+}
+
+/* Frame 6 Styling */
+.frame6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 46vh;
+}
+
+.revolution {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.start {
+  width: 13rem;
+  font-size: 0.85rem;
 }
