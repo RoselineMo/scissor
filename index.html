@@ -22,8 +22,13 @@
 
           question.addEventListener("click", () => {
             item.classList.toggle("collapsed");
-            answer.style.display = item.classList.contains("collapsed") ? "none" : "block";
-            question.classList.toggle('expanded', !item.classList.contains('collapsed'));
+            answer.style.display = item.classList.contains("collapsed")
+              ? "none"
+              : "block";
+            question.classList.toggle(
+              "expanded",
+              !item.classList.contains("collapsed")
+            );
           });
         });
       });
@@ -31,15 +36,22 @@
 
     <!-- Link for "gilroy" font family -->
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <!-- Fallback fonts -->
+    <link href="/assets/gilroyFont/Gilroy-Regular.woff" rel="stylesheet" />
+    <link href="/assets/gilroyFont/Gilroy-Bold.ttf" rel="stylesheet" />
+    <link href="/assets/gilroyFont/Gilroy-Medium.woff" rel="stylesheet" />
 
     <!-- Link to reset default-css (using normalize.css) -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
       rel="stylesheet"
-    />
+    /> -->
 
-    <!-- Link to the document's css file (index.js) -->
-    <link href="/assets/css/index.css" rel="stylesheet" />
+    <!-- Fallback normalize css (for default-css reset) -->
+    <link href="/assets/normalize.css" rel="stylesheet" />
+
+    <!-- Link to the main css file (index.js) -->
+    <link href="/index.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -57,10 +69,10 @@
         <!-- Site's navigation links -->
         <nav class="navLinks">
           <a><li id="myUrls">My URLS</li></a>
-          <a><li class="ft">Features</li></a>
-          <a><li>Pricing</li></a>
-          <a><li>Analytics</li></a>
-          <a><li>FAQs</li></a>
+          <a><li class="ft light">Features</li></a>
+          <a><li class="light">Pricing</li></a>
+          <a><li class="light">Analytics</li></a>
+          <a><li class="light">FAQs</li></a>
         </nav>
 
         <!-- Site header's CTA (call to action) -->
@@ -492,71 +504,102 @@
         <!-- Question 1 -->
         <div class="accordion-item">
           <div class="accordion-question">How does URL shortening work?</div>
-          <div class="accordion-answer">URL shortening works by taking a long URL and creating a
-            shorter, condensed version that redirects to the original URL.
-            When a user clicks on the shortened link, they are redirected to
-            the intended destination.
+          <div class="accordion-answer">
+            URL shortening works by taking a long URL and creating a shorter,
+            condensed version that redirects to the original URL. When a user
+            clicks on the shortened link, they are redirected to the intended
+            destination.
           </div>
         </div>
 
         <!-- Question 2 -->
         <div class="accordion-item">
-          <div class="accordion-question">Is it necessary to create an account to use the URL shortening
-            service?</div>
+          <div class="accordion-question">
+            Is it necessary to create an account to use the URL shortening
+            service?
+          </div>
           <div class="accordion-answer">
-              Not at all. Logging in only guarantees you access to extra premium services free of charge!</div>
+            Not at all. Logging in only guarantees you access to extra premium
+            services free of charge!
+          </div>
         </div>
 
         <!-- Question 3 -->
         <div class="accordion-item">
-          <div class="accordion-question">Are the shortened links permanent? Will they expire?</div>
-          <div class="accordion-answer">Yes they're permanent and No they will never expire</div>
+          <div class="accordion-question">
+            Are the shortened links permanent? Will they expire?
+          </div>
+          <div class="accordion-answer">
+            Yes they're permanent and No they will never expire
+          </div>
         </div>
 
         <!-- Question 4 -->
         <div class="accordion-item">
-          <div class="accordion-question">Are there any limitations on the number of URLs I can shorten?</div>
-          <div class="accordion-answer">No there are zero limitations on the number of URLs you can
-            shorten</div>
+          <div class="accordion-question">
+            Are there any limitations on the number of URLs I can shorten?
+          </div>
+          <div class="accordion-answer">
+            No there are zero limitations on the number of URLs you can shorten
+          </div>
         </div>
 
         <!-- Question 5 -->
         <div class="accordion-item">
-          <div class="accordion-question">Can I customize the shortened URLs to reflect my brand or content?</div>
-          <div class="accordion-answer">Yes most definitely! See an example <a href="#">here</a>.</div>
+          <div class="accordion-question">
+            Can I customize the shortened URLs to reflect my brand or content?
+          </div>
+          <div class="accordion-answer">
+            Yes most definitely! See an example <a href="#" id="here">here</a>.
+          </div>
         </div>
 
         <!-- Question 6 -->
         <div class="accordion-item">
-          <div class="accordion-question">Can I track the performance of my shortened URLs?</div>
-          <div class="accordion-answer">Yes you can, use our analytics tool <a href="#">here</a>.</div>
+          <div class="accordion-question">
+            Can I track the performance of my shortened URLs?
+          </div>
+          <div class="accordion-answer">
+            Yes you can, use our analytics tool <a href="#" id="here">here</a>.
+          </div>
         </div>
 
         <!-- Question 7 -->
         <div class="accordion-item">
-          <div class="accordion-question">How secure is the URL shortening service? Are the shortened links
-            protected against spam or malicious activity?</div>
-          <div class="accordion-answer">100% secure. View our SSL certificate <a href="#">here</a>.</div>
+          <div class="accordion-question">
+            How secure is the URL shortening service? Are the shortened links
+            protected against spam or malicious activity?
+          </div>
+          <div class="accordion-answer">
+            100% secure. View our SSL certificate
+            <a href="#" id="here">here</a>.
+          </div>
         </div>
 
         <!-- Question 8 -->
         <div class="accordion-item">
-          <div class="accordion-question">What is a QR code and what can it do?</div>
-          <div class="accordion-answer">A QR code is a type of barcode that can store various types of
-            information.
-            
-            It can be scanned by smartphones or QR code readers to quickly
-            access the encoded data, such as website URLs, contact details, or
-            product information.</div>
+          <div class="accordion-question">
+            What is a QR code and what can it do?
+          </div>
+          <div class="accordion-answer">
+            A QR code is a type of barcode that can store various types of
+            information. It can be scanned by smartphones or QR code readers to
+            quickly access the encoded data, such as website URLs, contact
+            details, or product information.
+          </div>
         </div>
 
         <!-- Question 9 -->
         <div class="accordion-item">
-          <div class="accordion-question">Is there an API available for integrating the URL shortening service
-            into my own applications or websites?</div>
-          <div class="accordion-answer">No not at this time, but we'll let you know if that service gets
+          <div class="accordion-question">
+            Is there an API available for integrating the URL shortening service
+            into my own applications or websites?
+          </div>
+          <div class="accordion-answer">
+            No not at this time, but we'll let you know if that service gets
             added to our offers in the future. Be the first to get notified
-            <a href="#">here</a>.</div>
+            <a href="#" id="here">here</a>.
+          </div>
         </div>
       </div>
     </div>
@@ -568,117 +611,123 @@
     </div>
 
     <!-- Frame 7: Footer-->
-    <div class="footer">
-      <div class="frame7left">
-        <div class="logoAndSocials">
-          <!-- Site Logo -->
-          <div class="footerLogo">
-            <img src="/assets/icons/logoBlack.svg" alt="The Scissor brand logo" />
+    <div class="frame7">
+      <div class="footer">
+        <div class="frame7left">
+          <div class="logoAndSocials">
+            <!-- Site Logo -->
+            <div class="footerLogo">
+              <img
+                src="/assets/icons/logoBlack.svg"
+                alt="The Scissor brand logo"
+              />
+            </div>
+
+            <!-- Site Socials -->
+            <div class="socials">
+              <a href="#">
+                <img src="/assets/icons/twitter.svg" alt="Twitter icon" />
+              </a>
+              <a href="#"
+                ><img src="/assets/icons/instagram.svg" alt="Instagram icon" />
+              </a>
+              <a href="#"
+                ><img src="/assets/icons/linkedin.svg" alt="Linkedin icon" />
+              </a>
+              <a href="#"
+                ><img src="/assets/icons/facebook.svg" alt="Facebook icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="frame7right">
+          <div class="cols">
+            <!-- Quick links box 1: Why Scissor ? -->
+            <div class="quickLinks Box1">
+              <a href="#" class="qLinksText" id="qLinksTitle">Why Scissor ?</a>
+              <a href="#" class="qLinksText">Scissor 101</a>
+              <a href="#" class="qLinksText">Integrations & API</a>
+              <a href="#" class="qLinksText">Pricing</a>
+            </div>
+
+            <!-- Quick links box 2: Resources -->
+            <div class="quickLinks Box2">
+              <a href="#" class="qLinksText" id="qLinksTitle">Resources</a>
+              <a href="#" class="qLinksText">Blog</a>
+              <a href="#" class="qLinksText">Resource Library</a>
+              <a href="#" class="qLinksText">Developers</a>
+              <a href="#" class="qLinksText">App Connectors</a>
+              <a href="#" class="qLinksText">Support</a>
+              <a href="#" class="qLinksText">Trust Center</a>
+              <a href="#" class="qLinksText">Browser Extension</a>
+              <a href="#" class="qLinksText">Mobile App</a>
+            </div>
           </div>
 
-          <!-- Site Socials -->
-          <div class="socials">
-            <a href="#">
-              <img src="/assets/icons/twitter.svg" alt="Twitter icon" />
-            </a>
-            <a href="#"
-              ><img src="/assets/icons/instagram.svg" alt="Instagram icon" />
-            </a>
-            <a href="#"
-              ><img src="/assets/icons/linkedin.svg" alt="Linkedin icon" />
-            </a>
-            <a href="#"
-              ><img src="/assets/icons/facebook.svg" alt="Facebook icon"
-            /></a>
+          <!-- Quick links box 3: Solutions -->
+          <div class="cols">
+            <div class="quickLinks Box3">
+              <a href="#" class="qLinksText" id="qLinksTitle">Solutions</a>
+              <a href="#" class="qLinksText">Social Media</a>
+              <a href="#" class="qLinksText">Digital Marketing</a>
+              <a href="#" class="qLinksText">Customer Service</a>
+              <a href="#" class="qLinksText">For Developers</a>
+            </div>
+
+            <!-- Quick links box 4: Features -->
+            <div class="quickLinks box4">
+              <a href="#" class="qLinksText" id="qLinksTitle">Features</a>
+              <a href="#" class="qLinksText">Branded Links </a>
+              <a href="#" class="qLinksText">Mobile Links </a>
+              <a href="#" class="qLinksText">Campaign </a>
+              <a href="#" class="qLinksText">Management & </a>
+              <a href="#" class="qLinksText">Analytics </a>
+              <a href="#" class="qLinksText">QR Code generation</a>
+            </div>
+          </div>
+
+          <!-- Quick links box 5: Products -->
+          <div class="cols">
+            <div class="quickLinks Box5">
+              <a href="#" class="qLinksText" id="qLinksTitle">Products</a>
+              <a href="#" class="qLinksText">Link Management </a>
+              <a href="#" class="qLinksText">QR Codes </a>
+              <a href="#" class="qLinksText">Link-in-bio</a>
+            </div>
+
+            <!-- Quick links box 6: Legal -->
+            <div class="quickLinks Box6">
+              <a href="#" class="qLinksText" id="qLinksTitle">Legal</a>
+              <a href="#" class="qLinksText">Privacy Policy </a>
+              <a href="#" class="qLinksText">Cookie Policy </a>
+              <a href="#" class="qLinksText">Terms of Service </a>
+              <a href="#" class="qLinksText">Acceptable Use Policy </a>
+              <a href="#" class="qLinksText">Code of Conduct</a>
+            </div>
+          </div>
+
+          <!-- Quick links box 7: Company -->
+          <div class="cols">
+            <div class="quickLinks Box7">
+              <a href="#" class="qLinksText" id="qLinksTitle">Company</a>
+              <a href="#" class="qLinksText">About Scissor </a>
+              <a href="#" class="qLinksText">Careers </a>
+              <a href="#" class="qLinksText">Partners </a>
+              <a href="#" class="qLinksText"> Press </a>
+              <a href="#" class="qLinksText">Contact </a>
+              <a href="#" class="qLinksText">Reviews</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Quick links -->
-      <div class="frame7right">
-        <div class="quickLinksCol1">
-          <!-- Quick links box 1: Why Scissor ? -->
-          <div class="quickLinks Box1">
-            <a href="#" class="qLinksText" id="qLinksTitle">Why Scissor ?</a>
-            <a href="#" class="qLinksText">Scissor 101</a>
-            <a href="#" class="qLinksText">Integrations & API</a>
-            <a href="#" class="qLinksText">Pricing</a>
-          </div>
-
-          <!-- Quick links box 2: Resources -->
-          <div class="quickLinks Box2">
-            <a href="#" class="qLinksText" id="qLinksTitle">Resources</a>
-            <a href="#" class="qLinksText">Blog</a>
-            <a href="#" class="qLinksText">Resource Library</a>
-            <a href="#" class="qLinksText">Developers</a>
-            <a href="#" class="qLinksText">App Connectors</a>
-            <a href="#" class="qLinksText">Support</a>
-            <a href="#" class="qLinksText">Trust Center</a>
-            <a href="#" class="qLinksText">Browser Extension</a>
-            <a href="#" class="qLinksText">Mobile App</a>
-          </div>
-        </div>
-
-        <!-- Quick links box 3: Solutions -->
-        <div class="quickLinksCol2">
-          <div class="quickLinks Box3">
-            <a href="#" class="qLinksText" id="qLinksTitle">Solutions</a>
-            <a href="#" class="qLinksText">Social Media</a>
-            <a href="#" class="qLinksText">Digital Marketing</a>
-            <a href="#" class="qLinksText">Customer Service</a>
-            <a href="#" class="qLinksText">For Developers</a>
-          </div>
-
-          <!-- Quick links box 4: Features -->
-          <div class="quickLinks Box4">
-            <a href="#" class="qLinksText" id="qLinksTitle">Features</a>
-            <a href="#" class="qLinksText">Branded Links </a>
-            <a href="#" class="qLinksText">Mobile Links </a>
-            <a href="#" class="qLinksText">Campaign </a>
-            <a href="#" class="qLinksText">Management & </a>
-            <a href="#" class="qLinksText">Analytics </a>
-            <a href="#" class="qLinksText">QR Code generation</a>
-          </div>
-        </div>
-
-        <!-- Quick links box 5: Products -->
-        <div class="quickLinksCol3">
-          <div class="quickLinks Box5">
-            <a href="#" class="qLinksText" id="qLinksTitle">Products</a>
-            <a href="#" class="qLinksText">Link Management </a>
-            <a href="#" class="qLinksText">QR Codes </a>
-            <a href="#" class="qLinksText">Link-in-bio</a>
-          </div>
-
-          <!-- Quick links box 6: Legal -->
-          <div class="quickLinks Box6">
-            <a href="#" class="qLinksText" id="qLinksTitle">Legal</a>
-            <a href="#" class="qLinksText">Privacy Policy </a>
-            <a href="#" class="qLinksText">Cookie Policy </a>
-            <a href="#" class="qLinksText">Terms of Service </a>
-            <a href="#" class="qLinksText">Acceptable Use Policy </a>
-            <a href="#" class="qLinksText">Code of Conduct</a>
-          </div>
-        </div>
-
-        <!-- Quick links box 7: Company -->
-        <div class="quickLinksCol4">
-          <div class="quickLinks Box7">
-            <a href="#" class="qLinksText" id="qLinksTitle">Company</a>
-            <a href="#" class="qLinksText">About Scissor </a>
-            <a href="#" class="qLinksText">Careers </a>
-            <a href="#" class="qLinksText">Partners </a>
-            <a href="#" class="qLinksText"> Press </a>
-            <a href="#" class="qLinksText">Contact </a>
-            <a href="#" class="qLinksText">Reviews</a>
-          </div>
-        </div>
-
-        <div class="footnote">
-          <a href="#">Terms of service |</a>
-          <a href="#">Security</a>
-          <a href="#">&copy; | Scissor 2023 </a>
-        </div>
+      <!-- Footnote -->
+      <div class="footnote">
+        <a href="#">Terms of service |</a>
+        <a href="#">Security</a>
+        <a href="#"> | &copy;Scissor 2023 </a>
       </div>
     </div>
   </body>

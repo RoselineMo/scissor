@@ -1,24 +1,35 @@
 /* General styling */
 
-/* Margin alignment */
+/* Fonts*/
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("gilroyFont"),
+    url(/assets/gilroyFont/Gilroy-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: local("gilroyFont"),
+    url(/assets/gilroyFont/Gilroy-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("gilroyFont"),
+    url(/assets/gilroyFont/Gilroy-Medium.woff) format("woff");
+}
+
+/* Margin & Body */
 * {
   margin: 0 auto;
 }
 
-/* Font */
 body {
-  font-family: "Gilroy-Medium", "sans-serif";
   overflow-x: hidden;
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
-/* All links */
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-/* All buttons */
+/* Buttons */
 button {
   cursor: pointer;
   display: flex;
@@ -31,6 +42,26 @@ button {
   width: 8.875rem;
   height: 2.75rem;
   padding: 0.75rem 1.5rem;
+}
+
+button:hover {
+  background-color: #83b4ff;
+}
+
+.light:hover {
+  color: #83b4ff;
+}
+
+#myUrls:hover,
+#ctaLogin:hover,
+.learnMore:hover {
+  color: #83b4ff;
+}
+
+#custom:hover {
+  background-color: #213446;
+  border-color: transparent;
+  color: #ffffff;
 }
 
 #custom {
@@ -56,7 +87,7 @@ button {
   margin-bottom: 5rem;
 }
 
-/* list settings */
+/* List settings */
 .navLinks li {
   list-style: none;
 }
@@ -75,6 +106,10 @@ button {
 
 ul {
   padding: 1.4rem;
+}
+
+#here {
+  color: #3284ff;
 }
 
 /* Styling special texts (spans, unique links) */
@@ -122,24 +157,17 @@ ul {
   font-family: "Gilroy-Bold", "sans-serif-bold";
 }
 
-/* Styling the icons */
+/* General links */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* More links */
 .linkIcon {
   width: 4rem;
   height: 4rem;
-}
-
-/* Hero section header  */
-.header {
-  display: flex;
-  align-items: center;
-  gap: 8.75rem;
-  padding-top: 1rem;
-}
-
-.navLogo {
-  display: flex;
-  padding: 0.5rem;
-  gap: 0.5rem;
 }
 
 .navLinks {
@@ -170,7 +198,68 @@ ul {
   font-family: "Gilroy-SemiBold";
 }
 
+/* Styling the backgrounds */
+.hero {
+  background-image: url(/assets/backgrounds/aurora.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 51rem;
+}
+
+.teardropBg {
+  max-width: 13.7rem;
+  max-height: 13rem;
+  position: relative;
+  bottom: 14.2rem;
+  left: -5rem;
+  z-index: -1;
+}
+
+.geometricBg {
+  position: relative;
+  bottom: 14.2rem;
+  left: -5rem;
+}
+
+.frame4 {
+  background-image: url(/assets/backgrounds/aqua.svg);
+  background-size: cover;
+  background-repeat: none;
+  height: 72vh;
+  width: 100vw;
+}
+
+.frame5 {
+  background-image: url(/assets/backgrounds/aqua2.svg);
+}
+
+.frame6 {
+  background-image: url(/assets/backgrounds/aqua5.svg);
+  background-size: cover;
+  background-repeat: none;
+  height: 72vh;
+  width: 100vw;
+}
+
+.frame7 {
+  background-image: url(/assets/backgrounds/aqua4.svg);
+}
+
 /* Frame 1 (Hero Section) */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8.75rem;
+  padding-top: 1rem;
+}
+
+.navLogo {
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
 
 .heroSectionContent {
   display: flex;
@@ -218,7 +307,6 @@ ul {
   padding: 2.5rem 3.75rem;
   width: 35rem;
   height: 6rem;
-
   position: relative;
   left: 7rem;
 
@@ -241,54 +329,6 @@ ul {
   font-family: "Gilroy-medium", "sans-serif-medium";
 }
 
-/* Styling the backgrounds */
-.hero {
-  background-image: url(/assets/backgrounds/aurora.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  max-height: 51rem;
-}
-
-.teardropBg {
-  max-width: 13.7rem;
-  max-height: 13rem;
-  position: relative;
-  bottom: 14.2rem;
-  left: -5rem;
-  z-index: -1;
-}
-
-.geometricBg {
-  position: relative;
-  bottom: 14.2rem;
-  left: -5rem;
-}
-
-.frame4 {
-  background-image: url(/assets/backgrounds/aqua.svg);
-  background-size: cover;
-  background-repeat: none;
-  height: 72vh;
-  width: 100vw;
-}
-
-.frame5 {
-  background-image: url(/assets/backgrounds/aqua2.svg);
-}
-
-.frame6 {
-  background-image: url(/assets/backgrounds/aqua5.svg);
-  background-size: cover;
-  background-repeat: none;
-  height: 72vh;
-  width: 100vw;
-}
-
-.footer {
-  background-image: url(/assets/backgrounds/aqua4.svg);
-}
-
 /* Frame 2 Styling */
 .frame2Top {
   display: flex;
@@ -300,6 +340,7 @@ ul {
 
 .frame2Header {
   padding-left: 10rem;
+  font-family: "Gilroy-Bold", "sans-serif-bold";
 }
 
 .frame2TopMetrics {
@@ -313,13 +354,13 @@ ul {
 .topMetricsText {
   font-size: 2rem;
   font-weight: bold;
+  font-family: "Gilroy-Bold", "sans-serif-bold";
 }
 
 .topMetricsNumber {
   color: #141414;
   margin-top: 1rem;
   font-size: 0.9rem;
-  /* padding-top: 1rem; */
 }
 
 .frame2Bottom {
@@ -586,14 +627,15 @@ select {
 }
 
 .faq {
-  font-size: 2.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  font-size: 2.3rem;
+  font-family: "Gilroy-Bold", "sans-serif-bold";
 }
 
-/* ACCORDION */
+/* Accordion */
 
 .accordion {
   width: 50%;
@@ -650,12 +692,84 @@ select {
 }
 
 .revolution {
-  color: #fff;
+  color: #ffffff;
   font-size: 2.5rem;
-  font-weight: bolder;
+  font-family: "Gilroy-Bold", "sans-serif-bold";
 }
 
 .start {
   width: 13rem;
   font-size: 0.85rem;
+}
+
+/* Frame 7 Styling */
+.footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  width: 70%;
+  position: relative;
+}
+
+#qLinksTitle {
+  padding-bottom: 0.2rem;
+  font-size: 1.1rem;
+  font-family: "Gilroy-bold", "sans-serif-bold";
+}
+
+.frame7left {
+  position: relative;
+  bottom: 10.3rem;
+}
+
+.footerLogo {
+  position: relative;
+  left: -0.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.frame7right {
+  display: flex;
+  gap: 2rem;
+}
+
+.cols {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.box4 {
+  position: relative;
+  bottom: 1.45rem;
+}
+
+.qLinksText {
+  display: block;
+  width: 9rem;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  font-family: "Gilroy-regular", sans-serif;
+}
+
+.footnote {
+  position: relative;
+  left: 50rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.1rem;
+  word-spacing: 0.1rem;
+  font-family: "Gilroy-regular", sans-serif;
 }
